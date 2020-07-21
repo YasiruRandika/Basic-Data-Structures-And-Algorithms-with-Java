@@ -8,11 +8,13 @@ In a linked list, a link is an object of a class called something like 'Link'.
 public class Link {
     public int iData; //data item
     public Link next; //reference to the next link
+    public Link previous; //reference to the previous
 
     //Constructor
     public Link(int id) {
         this.iData = id;
         next = null;
+        previous = null;
     }
 
     //Display the data item
