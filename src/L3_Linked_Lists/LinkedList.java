@@ -43,4 +43,40 @@ public class LinkedList {
         return temp;
     }
 
+    //Find a Link
+    public Link find(int id) {
+        Link current = first;
+        Link findLink = null;
+
+        while (current != null) {
+            if (current.iData == id) {
+                findLink = current;
+                break;
+            }
+        }
+
+        return findLink;
+    }
+
+    //insertAfter method
+    public boolean insertAfter(int key, int newData) {
+        Link current = first;
+        boolean inserted = false;
+
+        while (current != null) {
+            if (current.iData == key) {
+                Link newLink = new Link(newData);
+                Link next = current.next;
+                newLink.next = next;
+                current.next = newLink;
+
+                inserted = true;
+
+                break;
+            }
+        }
+
+        return inserted;
+    }
+
 }
