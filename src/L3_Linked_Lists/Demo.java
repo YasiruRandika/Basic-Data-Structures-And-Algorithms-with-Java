@@ -25,5 +25,11 @@ public class Demo {
 
         //Display the linked list
         linkedList.displayList();
+
+        /*
+        * Likewise we can also use the Doubly-Linked list and Double ended List to store the values
+        * The same proceduer happens but those two lists have their own features
+        * Please go through the Doubly-Linke list and Double End list
+        * */
     }
 }
