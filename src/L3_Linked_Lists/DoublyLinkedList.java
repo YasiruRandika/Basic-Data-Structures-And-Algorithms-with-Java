@@ -22,7 +22,6 @@ public class DoublyLinkedList {
         Link current = first;
 
         while (current != null) {
-            current.student.toString();
             current.displayLink();
             current = current.next;
         }

@@ -20,6 +20,6 @@ public class Link {
 
     //Display the data item
     public void displayLink() {
-        this.student.toString();
+        System.out.println(this.student.toString());
     }
 }
