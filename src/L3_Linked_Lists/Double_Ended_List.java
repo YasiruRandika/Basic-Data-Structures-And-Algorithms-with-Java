@@ -28,8 +28,8 @@ public class Double_Ended_List {
     }
 
     //insertFirst Method
-    public void insertFirst(int id) {
-        Link newLink = new Link(id);
+    public void insertFirst(Student student) {
+        Link newLink = new Link(student);
         newLink.next = first;
         first = newLink;
 
@@ -50,12 +50,12 @@ public class Double_Ended_List {
     }
 
     //Find a Link
-    public Link find(int id) {
+    public Link find(String name) {
         Link current = first;
         Link findLink = null;
 
         while (current != null) {
-            if (current.iData == id) {
+            if (current.student.getName() == name) {
                 findLink = current;
                 break;
             }
@@ -65,12 +65,12 @@ public class Double_Ended_List {
     }
 
     //insertAfter method
-    public boolean insertAfter(int key, int newData) {
+    public boolean insertAfter(String key, Student newData) {
         Link current = first;
         boolean inserted = false;
 
         while (current != null) {
-            if (current.iData == key) {
+            if (current.student.getName() == key) {
                 Link newLink = new Link(newData);
                 Link next = current.next;
                 newLink.next = next;

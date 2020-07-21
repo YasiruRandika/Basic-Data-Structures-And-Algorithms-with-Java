@@ -22,6 +22,7 @@ public class DoublyLinkedList {
         Link current = first;
 
         while (current != null) {
+            current.student.toString();
             current.displayLink();
             current = current.next;
         }
@@ -29,8 +30,8 @@ public class DoublyLinkedList {
     }
 
     //insertFirst Method
-    public void insertFirst(int id) {
-        Link newLink = new Link(id);
+    public void insertFirst(Student student) {
+        Link newLink = new Link(student);
         newLink.next = first;
         newLink.previous = null;
 
@@ -50,12 +51,12 @@ public class DoublyLinkedList {
     }
 
     //Find a Link
-    public Link find(int id) {
+    public Link find(String name) {
         Link current = first;
         Link findLink = null;
 
         while (current != null) {
-            if (current.iData == id) {
+            if (current.student.getName() == name) {
                 findLink = current;
                 break;
             }
@@ -65,12 +66,12 @@ public class DoublyLinkedList {
     }
 
     //insertAfter method
-    public boolean insertAfter(int key, int newData) {
+    public boolean insertAfter(String key, Student newData) {
         Link current = first;
         boolean inserted = false;
 
         while (current != null) {
-            if (current.iData == key) {
+            if (current.student.getName() == key) {
                 Link newLink = new Link(newData);
                 Link next = current.next;
                 newLink.next = next;
