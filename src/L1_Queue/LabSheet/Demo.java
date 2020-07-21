@@ -1,4 +1,4 @@
-package Lecture02.LabSheet;
+package L1_Queue.LabSheet;
 
 import java.util.ArrayList;
 import java.util.Scanner;

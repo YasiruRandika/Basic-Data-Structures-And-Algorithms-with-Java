@@ -1,6 +1,6 @@
-package Lecture01.Tutorial01;
+package L2_Stacks.Tutorial01;
 
-import Lecture01.LabSheet01.Stack;
+import L2_Stacks.LabSheet01.Stack;
 
 //Peek function using pop() and push()
 public class Question03 {

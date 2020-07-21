@@ -1,4 +1,4 @@
-package Lecture02.Tutorial;
+package L1_Queue.Tutorial;
 
 import java.util.Scanner;
 import java.util.Stack;

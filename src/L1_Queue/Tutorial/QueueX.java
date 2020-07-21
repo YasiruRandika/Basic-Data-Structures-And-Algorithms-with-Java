@@ -1,15 +1,15 @@
-package Lecture02.LabSheet;
+package L1_Queue.Tutorial;
 
 public class QueueX {
     private int maxSize;
-    private int queArray[];
+    private double queArray[];
     private int front;
     private int rear;
     private int nItems;
 
     public QueueX(int maxSize) {
         this.maxSize = maxSize;
-        queArray = new int[this.maxSize];
+        queArray = new double[this.maxSize];
         front = 0;
         rear = -1;
         nItems = 0;
@@ -27,7 +27,7 @@ public class QueueX {
     }*/
 
     /*Insert elements for Ciruclar Queue*/
-    public void insert(int i) {
+    public void insert(double i) {
         if (nItems == maxSize) {
             System.out.println("*** Queue is Full ***\n");
         } else {
@@ -53,12 +53,12 @@ public class QueueX {
     }*/
 
     /*Remove items from Circular Queue*/
-    public int remove() {
+    public double remove() {
         if (nItems == 0) {
             System.out.println("*** Queue is Empty ***\n");
             return -99;
         } else {
-            int temp = queArray[front++];
+            double temp = queArray[front++];
             if (front == maxSize) {
                 front = 0;
             }

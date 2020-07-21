@@ -1,4 +1,4 @@
-package Lecture01.LabSheet01;
+package L2_Stacks.LabSheet01;
 
 public class Reverser {
     private String input;

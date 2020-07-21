@@ -1,4 +1,4 @@
-package Lecture02.Tutorial;
+package L1_Queue.Tutorial;
 
 public class PointerLine {
     private int jobArr[];
