@@ -84,6 +84,7 @@ public class Double_Ended_List {
 
                 break;
             }
+            current = current.next;
         }
 
         return inserted;

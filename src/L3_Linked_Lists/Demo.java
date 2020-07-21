@@ -26,6 +26,14 @@ public class Demo {
         //Display the linked list
         linkedList.displayList();
 
+        //Insert after some student
+        linkedList.insertAfter("Nipuna", student3);
+
+        /*
+        * Display the linked list
+        * Here the order should be Aravinda, Nipuna and then Prashani*/
+        linkedList.displayList();
+
         /*
         * Likewise we can also use the Doubly-Linked list and Double ended List to store the values
         * The same proceduer happens but those two lists have their own features

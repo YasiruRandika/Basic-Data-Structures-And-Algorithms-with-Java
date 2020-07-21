@@ -82,6 +82,7 @@ public class DoublyLinkedList {
 
                 break;
             }
+            current = current.next;
         }
 
         return inserted;

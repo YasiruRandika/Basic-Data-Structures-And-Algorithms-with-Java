@@ -65,7 +65,7 @@ public class LinkedList {
         boolean inserted = false;
 
         while (current != null) {
-            if (current.student.getName() == key) {
+            if (current.student.getName().equals(key.trim())) {
                 Link newLink = new Link(newData);
                 Link next = current.next;
                 newLink.next = next;
@@ -75,6 +75,7 @@ public class LinkedList {
 
                 break;
             }
+            current = current.next;
         }
 
         return inserted;
