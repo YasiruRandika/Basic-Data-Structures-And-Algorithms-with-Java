@@ -59,6 +59,26 @@ public class LinkedList {
         return findLink;
     }
 
+    //delete
+    public Link delete(String key) {
+        Link current =  first;
+        Link previous = first;
+        Link temp = null;
+
+        while (current != null) {
+            if (current.student.getName().equals(key))
+            if (current == first) {
+                first = first.next;
+                temp = current;
+            } else {
+                temp = current;
+            }
+            previous = current;
+            current = current.next;
+        }
+        return temp;
+    }
+
     //insertAfter method
     public boolean insertAfter(String key, Student newData) {
         Link current = first;
