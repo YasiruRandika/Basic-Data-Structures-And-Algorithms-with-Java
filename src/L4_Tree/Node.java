@@ -1,29 +1,22 @@
 package L4_Tree;
 
 public class Node {
-    private int iData;//Use as the key value
-    private double dData;//Other data
+    private int id;//Use as the key value
+    private String empName;//Other data
     private Node leftChild;//Node's left child
     private Node rightChild;//Node's right child
 
-    public Node(int iData, double dData) {
-        this.iData = iData;
-        this.dData = dData;
-        this.leftChild = null;
-        this.rightChild = null;
-    }
-
     public void displayNode() {
-        System.out.println("{ " + iData + ", " + dData + " }");
+        System.out.println("{ " + id + ", " + empName + " }");
     }
 
     //Getters
-    public int getiData() {
-        return iData;
+    public int getId() {
+        return id;
     }
 
-    public double getdData() {
-        return dData;
+    public String getEmpName() {
+        return empName;
     }
 
     public Node getLeftChild() {
@@ -32,5 +25,22 @@ public class Node {
 
     public Node getRightChild() {
         return rightChild;
+    }
+
+    //Setters
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+
+    public void setLeftChild(Node leftChild) {
+        this.leftChild = leftChild;
+    }
+
+    public void setRightChild(Node rightChild) {
+        this.rightChild = rightChild;
     }
 }

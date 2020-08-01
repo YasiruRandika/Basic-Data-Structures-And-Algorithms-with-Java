@@ -34,8 +34,8 @@ public class Tree{
     public Node find(int key) {
         Node current = root;
 
-        while (current.getiData() != key) {
-            if (key < current.getiData()) {
+        while (current.getId() != key) {
+            if (key < current.getId()) {
                 current = current.getLeftChild();
             } else {
                 current = current.getRightChild();
@@ -69,5 +69,37 @@ public class Tree{
         }
     }
 
-    //delete
+    //insert
+    public  void insert(int id, String name) {
+        Node newNode = new Node();
+        newNode.setId(id);
+        newNode.setEmpName(name);
+
+        if (root == null) {
+            root = newNode;
+        } else {
+            Node current = root;//Start at root
+            Node parent;
+
+            while (true) {
+                parent = current;
+
+                if (id < current.getId()) {
+                    current = current.getLeftChild();
+
+                    if (current == null) {
+                        parent.setLeftChild(newNode);
+                        return;
+                    }
+                } else {
+                    current = current.getRightChild();
+
+                    if (current == null) {
+                        parent.setRightChild(newNode);
+                        return;
+                    }
+                }
+            }
+        }
+    }
 }
