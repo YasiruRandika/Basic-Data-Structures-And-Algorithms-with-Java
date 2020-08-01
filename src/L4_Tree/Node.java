@@ -16,4 +16,21 @@ public class Node {
     public void displayNode() {
         System.out.println("{ " + iData + ", " + dData + " }");
     }
+
+    //Getters
+    public int getiData() {
+        return iData;
+    }
+
+    public double getdData() {
+        return dData;
+    }
+
+    public Node getLeftChild() {
+        return leftChild;
+    }
+
+    public Node getRightChild() {
+        return rightChild;
+    }
 }
