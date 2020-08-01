@@ -72,6 +72,7 @@ public class LinkedList {
                 temp = current;
             } else {
                 temp = current;
+                previous.next = current.next;
             }
             previous = current;
             current = current.next;
