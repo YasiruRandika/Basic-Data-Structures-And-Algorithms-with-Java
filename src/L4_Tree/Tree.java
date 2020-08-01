@@ -30,6 +30,15 @@ public class Tree{
         }
     }
 
+    //InOrder Traversing Method
+    public void inOrder(Node localRoot) {
+        if (localRoot != null) {
+            inOrder(localRoot.getLeftChild());
+            localRoot.displayNode();
+            inOrder(localRoot.getRightChild());
+        }
+    }
+
     //Find Method
     public Node find(int key) {
         Node current = root;
@@ -101,5 +110,14 @@ public class Tree{
                 }
             }
         }
+    }
+
+    //Delete all nodes
+    public void deleteAll() {
+        root = null;
+    }
+
+    public Node getRoot() {
+        return root;
     }
 }

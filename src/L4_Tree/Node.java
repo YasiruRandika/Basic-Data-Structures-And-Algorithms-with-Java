@@ -1,5 +1,8 @@
 package L4_Tree;
-
+/*
+* Here we are implementing a node to sotre the employee id and the name
+* There we use id as the key for tree node
+* */
 public class Node {
     private int id;//Use as the key value
     private String empName;//Other data
